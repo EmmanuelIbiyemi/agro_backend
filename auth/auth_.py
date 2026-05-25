@@ -1,11 +1,11 @@
 from fastapi import APIRouter , Depends , status , HTTPException 
 from fastapi.security import OAuth2PasswordBearer
 import bcrypt
-from agro_back.agro_backend.schemas.auth_schemy import RegisterRequest , LoginRequest
-from agro_back.agro_backend.models.auth_model import Agro_Acc
+from schemas.auth_schemy import RegisterRequest , LoginRequest
+from models.auth_model import Agro_Acc
 from sqlalchemy import select , insert 
 from sqlalchemy.orm import Session
-from agro_backend.models.sessions import get_db
+from models.sessions import get_db
 import uuid
 from datetime import timedelta , datetime
 from jose import JWTError , jwt

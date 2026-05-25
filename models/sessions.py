@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session, declarative_base
-from agro_back.agro_backend.config.dbConfig import settings
+from config.dbConfig import settings
 
 DATABASE_URL = settings.get_database_url()
 

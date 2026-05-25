@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Date, Integer, String , Float , Boolean
-from agro_back.agro_backend.models.base import TimeStampedModel , Base 
+from models.base import TimeStampedModel , Base 
 from sqlalchemy.dialects.postgresql import UUID, ARRAY
 import uuid
 

@@ -1,11 +1,11 @@
 from fastapi import APIRouter  , UploadFile , Response , HTTPException , Depends
-from agro_back.agro_backend.models.sessions import Session
-from agro_back.agro_backend.schemas.LLM import BreifInp_
+from models.sessions import Session
+from schemas.LLM import BreifInp_
 import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 from google.generativeai import types
-from agro_back.agro_backend.auth.auth_ import get_current_agrouser
+from auth.auth_ import get_current_agrouser
 
 
 load_dotenv()
